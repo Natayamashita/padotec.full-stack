@@ -1,0 +1,6 @@
+iot-devices-api/node_modules
+iot-devices-api/dist
+.git
+Dockerfile
+docker-compose.yml
+*.log
