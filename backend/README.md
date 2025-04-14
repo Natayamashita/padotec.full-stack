@@ -98,3 +98,40 @@ Response: 200
 ---
 
 🍀 Boa sorte! 🍀
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+
+- Docker (opcional, se você for rodar via container).
+- Node.js (se for rodar localmente).
+- Prisma (comando npx prisma).
+
+### Rodando localmente
+
+- clone este repositório: https://github.com/Natayamashita/padotec.full-stack.git
+- Após clonado, acesse ele via VsCode ou qualquer IDE de sua preferencia.
+- No terminal:
+   ```bash
+   cd iot-devices-api
+- Instale as dependencias com:
+    ```bash
+    npm i
+- Gere o banco de dados
+    ```bash
+    npx prisma migrate dev npx prisma generate
+- Rode a aplicação
+     ```bash
+     npm run start:dev
+- A aplicação esta rodando em localhost:3000
+
+### Rodando via docker
+- Se certifique de estar no mesmo local da pasta backend, em que contem o dockerfile e o dockerignore juntamente.
+- Crie a imagem docker rodando o seguinte comando:
+  ```bash
+  docker build -t iot-device-api .
+- Inicie a imagem que você acabou de criar:
+  ```bash
+  docker run -p 3000:3000 iot-api
+- A aplicação estara rodando em http://localhost:3000
+
