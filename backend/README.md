@@ -129,9 +129,10 @@ Response: 200
 - Se certifique de estar no mesmo local da pasta backend, em que contem o dockerfile e o dockerignore juntamente.
 - Crie a imagem docker rodando o seguinte comando:
   ```bash
-  docker build -t iot-device-api .
+  docker build -t iot-devices-api .
+- Caso Windows, se certifique de estar com o docker desktop aberto em seu computador.
 - Inicie a imagem que você acabou de criar:
   ```bash
-  docker run -p 3000:3000 iot-api
+  docker run -p 3000:3000 iot-devices-api
 - A aplicação estara rodando em http://localhost:3000
 

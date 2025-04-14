@@ -1,0 +1,17 @@
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model IotDevice {
+  id String @default(uuid()) @id
+  name String
+  email String
+  mac String @unique
+  timestamp BigInt     @default(0)
+}

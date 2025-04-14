@@ -12,9 +12,6 @@ RUN npm install
 # Copia o restante do projeto
 COPY iot-devices-api/ ./
 
-# Copia o .env também (se não foi com o restante acima)
-COPY iot-devices-api/.env ./
-
 # Gera o Prisma Client
 RUN npx prisma generate
 
