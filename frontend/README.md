@@ -62,3 +62,121 @@ lockId                               | Log                                      
 **Observação**: Os logs acima são apenas exemplos de implementação. Você pode incrementar e/ou alterar o formato de exibição.
 
 🍀 Boa sorte! 🍀
+
+## User Access Interface Documentation
+
+### Sistema de Visualização de Logs
+
+## Descrição
+
+Sistema para visualização e filtragem de logs de acesso a dispositivos de segurança. Permite visualizar registros de eventos como abertura e travamento de portas, com diferentes métodos de acesso (cartão RFID ou aplicativo).
+
+## Funcionalidades
+
+- Visualização de logs em ordem decrescente por ID
+- Filtragem por tipo de visualização:
+
+- **Dispositivo de Segurança**: filtro por MAC e ID do dispositivo
+- **Usuário**: filtro por nome e ID do usuário
+
+
+
+- Exibição de status de dispositivo (trancado/destrancado)
+- Indicação de método de acesso (cartão RFID/aplicativo)
+
+
+## Tecnologias
+
+- React
+- TypeScript
+- Tailwind CSS
+- Componentes UI personalizados
+
+
+## Como Executar
+
+### Requisitos
+
+- Node.js instalado
+
+### Passos
+
+1. Clone o repositório:
+
+```plaintext
+git clone https://github.com/seu-usuario/sistema-logs.git
+cd sistema-logs
+```
+
+### Sistema de Visualização de Logs
+
+## Descrição
+
+Sistema para visualização e filtragem de logs de acesso a dispositivos de segurança. Permite visualizar registros de eventos como abertura e travamento de portas, com diferentes métodos de acesso (cartão RFID ou aplicativo).
+
+## Funcionalidades
+
+- Visualização de logs em ordem decrescente por ID
+- Filtragem por tipo de visualização:
+
+- **Dispositivo de Segurança**: filtro por MAC e ID do dispositivo
+- **Usuário**: filtro por nome e ID do usuário
+
+
+
+- Exibição de status de dispositivo (trancado/destrancado)
+- Indicação de método de acesso (cartão RFID/aplicativo)
+
+
+## Tecnologias
+
+- React
+- TypeScript
+- Tailwind CSS
+- Componentes UI personalizados
+
+
+## Como Executar
+
+### Requisitos
+
+- Node.js instalado
+
+
+### Passos
+
+1. Clone o repositório:
+
+```plaintext
+git clone https://github.com/seu-usuario/sistema-logs.git
+cd sistema-logs
+```
+
+
+2. Instale as dependências:
+
+```plaintext
+npm install
+```
+
+
+3. Execute o projeto:
+
+```plaintext
+npm run dev
+```
+
+
+4. Acesse no navegador:
+
+```plaintext
+http://localhost:3000
+```
+
+
+
+## Estrutura do Projeto
+
+- `App.tsx`: Componente principal com lógica de filtragem
+- `components/log-table.tsx`: Tabela de exibição dos logs
+- `public/data.json`: Arquivo com dados de exemplo
